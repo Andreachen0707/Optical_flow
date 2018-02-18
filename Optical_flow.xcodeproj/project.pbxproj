@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		788971552039398F00A8E8DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971542039398F00A8E8DA /* AppDelegate.m */; };
+		788971582039398F00A8E8DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971572039398F00A8E8DA /* ViewController.m */; };
+		7889715B2039398F00A8E8DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788971592039398F00A8E8DA /* Main.storyboard */; };
+		7889715D2039398F00A8E8DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7889715C2039398F00A8E8DA /* Assets.xcassets */; };
+		788971602039398F00A8E8DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7889715E2039398F00A8E8DA /* LaunchScreen.storyboard */; };
+		788971632039398F00A8E8DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971622039398F00A8E8DA /* main.m */; };
+		7889716D2039398F00A8E8DA /* Optical_flowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7889716C2039398F00A8E8DA /* Optical_flowTests.m */; };
+		788971782039398F00A8E8DA /* Optical_flowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971772039398F00A8E8DA /* Optical_flowUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		788971692039398F00A8E8DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 788971482039398F00A8E8DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7889714F2039398F00A8E8DA;
+			remoteInfo = Optical_flow;
+		};
+		788971742039398F00A8E8DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 788971482039398F00A8E8DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7889714F2039398F00A8E8DA;
+			remoteInfo = Optical_flow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		788971502039398F00A8E8DA /* Optical_flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Optical_flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		788971532039398F00A8E8DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		788971542039398F00A8E8DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		788971562039398F00A8E8DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		788971572039398F00A8E8DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7889715A2039398F00A8E8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7889715C2039398F00A8E8DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7889715F2039398F00A8E8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		788971612039398F00A8E8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788971622039398F00A8E8DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		788971682039398F00A8E8DA /* Optical_flowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Optical_flowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7889716C2039398F00A8E8DA /* Optical_flowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Optical_flowTests.m; sourceTree = "<group>"; };
+		7889716E2039398F00A8E8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788971732039398F00A8E8DA /* Optical_flowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Optical_flowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		788971772039398F00A8E8DA /* Optical_flowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Optical_flowUITests.m; sourceTree = "<group>"; };
+		788971792039398F00A8E8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7889714D2039398F00A8E8DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788971652039398F00A8E8DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788971702039398F00A8E8DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		788971472039398F00A8E8DA = {
+			isa = PBXGroup;
+			children = (
+				788971522039398F00A8E8DA /* Optical_flow */,
+				7889716B2039398F00A8E8DA /* Optical_flowTests */,
+				788971762039398F00A8E8DA /* Optical_flowUITests */,
+				788971512039398F00A8E8DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		788971512039398F00A8E8DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				788971502039398F00A8E8DA /* Optical_flow.app */,
+				788971682039398F00A8E8DA /* Optical_flowTests.xctest */,
+				788971732039398F00A8E8DA /* Optical_flowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		788971522039398F00A8E8DA /* Optical_flow */ = {
+			isa = PBXGroup;
+			children = (
+				788971532039398F00A8E8DA /* AppDelegate.h */,
+				788971542039398F00A8E8DA /* AppDelegate.m */,
+				788971562039398F00A8E8DA /* ViewController.h */,
+				788971572039398F00A8E8DA /* ViewController.m */,
+				788971592039398F00A8E8DA /* Main.storyboard */,
+				7889715C2039398F00A8E8DA /* Assets.xcassets */,
+				7889715E2039398F00A8E8DA /* LaunchScreen.storyboard */,
+				788971612039398F00A8E8DA /* Info.plist */,
+				788971622039398F00A8E8DA /* main.m */,
+			);
+			path = Optical_flow;
+			sourceTree = "<group>";
+		};
+		7889716B2039398F00A8E8DA /* Optical_flowTests */ = {
+			isa = PBXGroup;
+			children = (
+				7889716C2039398F00A8E8DA /* Optical_flowTests.m */,
+				7889716E2039398F00A8E8DA /* Info.plist */,
+			);
+			path = Optical_flowTests;
+			sourceTree = "<group>";
+		};
+		788971762039398F00A8E8DA /* Optical_flowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				788971772039398F00A8E8DA /* Optical_flowUITests.m */,
+				788971792039398F00A8E8DA /* Info.plist */,
+			);
+			path = Optical_flowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7889714F2039398F00A8E8DA /* Optical_flow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7889717C2039398F00A8E8DA /* Build configuration list for PBXNativeTarget "Optical_flow" */;
+			buildPhases = (
+				7889714C2039398F00A8E8DA /* Sources */,
+				7889714D2039398F00A8E8DA /* Frameworks */,
+				7889714E2039398F00A8E8DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Optical_flow;
+			productName = Optical_flow;
+			productReference = 788971502039398F00A8E8DA /* Optical_flow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		788971672039398F00A8E8DA /* Optical_flowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7889717F2039398F00A8E8DA /* Build configuration list for PBXNativeTarget "Optical_flowTests" */;
+			buildPhases = (
+				788971642039398F00A8E8DA /* Sources */,
+				788971652039398F00A8E8DA /* Frameworks */,
+				788971662039398F00A8E8DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7889716A2039398F00A8E8DA /* PBXTargetDependency */,
+			);
+			name = Optical_flowTests;
+			productName = Optical_flowTests;
+			productReference = 788971682039398F00A8E8DA /* Optical_flowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		788971722039398F00A8E8DA /* Optical_flowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 788971822039398F00A8E8DA /* Build configuration list for PBXNativeTarget "Optical_flowUITests" */;
+			buildPhases = (
+				7889716F2039398F00A8E8DA /* Sources */,
+				788971702039398F00A8E8DA /* Frameworks */,
+				788971712039398F00A8E8DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				788971752039398F00A8E8DA /* PBXTargetDependency */,
+			);
+			name = Optical_flowUITests;
+			productName = Optical_flowUITests;
+			productReference = 788971732039398F00A8E8DA /* Optical_flowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		788971482039398F00A8E8DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Andrea Chen";
+				TargetAttributes = {
+					7889714F2039398F00A8E8DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					788971672039398F00A8E8DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7889714F2039398F00A8E8DA;
+					};
+					788971722039398F00A8E8DA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7889714F2039398F00A8E8DA;
+					};
+				};
+			};
+			buildConfigurationList = 7889714B2039398F00A8E8DA /* Build configuration list for PBXProject "Optical_flow" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 788971472039398F00A8E8DA;
+			productRefGroup = 788971512039398F00A8E8DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7889714F2039398F00A8E8DA /* Optical_flow */,
+				788971672039398F00A8E8DA /* Optical_flowTests */,
+				788971722039398F00A8E8DA /* Optical_flowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7889714E2039398F00A8E8DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788971602039398F00A8E8DA /* LaunchScreen.storyboard in Resources */,
+				7889715D2039398F00A8E8DA /* Assets.xcassets in Resources */,
+				7889715B2039398F00A8E8DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788971662039398F00A8E8DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788971712039398F00A8E8DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7889714C2039398F00A8E8DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788971582039398F00A8E8DA /* ViewController.m in Sources */,
+				788971632039398F00A8E8DA /* main.m in Sources */,
+				788971552039398F00A8E8DA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788971642039398F00A8E8DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7889716D2039398F00A8E8DA /* Optical_flowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7889716F2039398F00A8E8DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788971782039398F00A8E8DA /* Optical_flowUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7889716A2039398F00A8E8DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7889714F2039398F00A8E8DA /* Optical_flow */;
+			targetProxy = 788971692039398F00A8E8DA /* PBXContainerItemProxy */;
+		};
+		788971752039398F00A8E8DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7889714F2039398F00A8E8DA /* Optical_flow */;
+			targetProxy = 788971742039398F00A8E8DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		788971592039398F00A8E8DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7889715A2039398F00A8E8DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7889715E2039398F00A8E8DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7889715F2039398F00A8E8DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7889717A2039398F00A8E8DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7889717B2039398F00A8E8DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7889717D2039398F00A8E8DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CAFDG7Q67V;
+				INFOPLIST_FILE = Optical_flow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7889717E2039398F00A8E8DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CAFDG7Q67V;
+				INFOPLIST_FILE = Optical_flow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		788971802039398F00A8E8DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CAFDG7Q67V;
+				INFOPLIST_FILE = Optical_flowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optical_flow.app/Optical_flow";
+			};
+			name = Debug;
+		};
+		788971812039398F00A8E8DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CAFDG7Q67V;
+				INFOPLIST_FILE = Optical_flowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optical_flow.app/Optical_flow";
+			};
+			name = Release;
+		};
+		788971832039398F00A8E8DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CAFDG7Q67V;
+				INFOPLIST_FILE = Optical_flowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Optical_flow;
+			};
+			name = Debug;
+		};
+		788971842039398F00A8E8DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CAFDG7Q67V;
+				INFOPLIST_FILE = Optical_flowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Optical_flow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7889714B2039398F00A8E8DA /* Build configuration list for PBXProject "Optical_flow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7889717A2039398F00A8E8DA /* Debug */,
+				7889717B2039398F00A8E8DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7889717C2039398F00A8E8DA /* Build configuration list for PBXNativeTarget "Optical_flow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7889717D2039398F00A8E8DA /* Debug */,
+				7889717E2039398F00A8E8DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7889717F2039398F00A8E8DA /* Build configuration list for PBXNativeTarget "Optical_flowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788971802039398F00A8E8DA /* Debug */,
+				788971812039398F00A8E8DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		788971822039398F00A8E8DA /* Build configuration list for PBXNativeTarget "Optical_flowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788971832039398F00A8E8DA /* Debug */,
+				788971842039398F00A8E8DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 788971482039398F00A8E8DA /* Project object */;
+}
