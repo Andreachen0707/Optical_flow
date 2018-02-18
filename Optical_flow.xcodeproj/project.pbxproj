@@ -8,13 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		788971552039398F00A8E8DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971542039398F00A8E8DA /* AppDelegate.m */; };
-		788971582039398F00A8E8DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971572039398F00A8E8DA /* ViewController.m */; };
+		788971582039398F00A8E8DA /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 788971572039398F00A8E8DA /* ViewController.mm */; };
 		7889715B2039398F00A8E8DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788971592039398F00A8E8DA /* Main.storyboard */; };
 		7889715D2039398F00A8E8DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7889715C2039398F00A8E8DA /* Assets.xcassets */; };
 		788971602039398F00A8E8DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7889715E2039398F00A8E8DA /* LaunchScreen.storyboard */; };
 		788971632039398F00A8E8DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971622039398F00A8E8DA /* main.m */; };
 		7889716D2039398F00A8E8DA /* Optical_flowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7889716C2039398F00A8E8DA /* Optical_flowTests.m */; };
 		788971782039398F00A8E8DA /* Optical_flowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 788971772039398F00A8E8DA /* Optical_flowUITests.m */; };
+		7889718720393A5600A8E8DA /* GTCaptureOutputUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7889718620393A5600A8E8DA /* GTCaptureOutputUtils.mm */; };
+		7889718B20393AAC00A8E8DA /* GTPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7889718A20393AAC00A8E8DA /* GTPreviewView.m */; };
+		7889718F20393BDB00A8E8DA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889718E20393BDB00A8E8DA /* AVFoundation.framework */; };
+		7889719120393BE600A8E8DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719020393BE600A8E8DA /* CoreGraphics.framework */; };
+		7889719320393BF400A8E8DA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719220393BF300A8E8DA /* CoreMedia.framework */; };
+		7889719520393BFC00A8E8DA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719420393BFC00A8E8DA /* CoreVideo.framework */; };
+		7889719720393C0A00A8E8DA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719620393C0A00A8E8DA /* CoreImage.framework */; };
+		7889719920393C2E00A8E8DA /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719820393C2E00A8E8DA /* libjpeg.a */; };
+		7889719B20393C4200A8E8DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719A20393C4200A8E8DA /* UIKit.framework */; };
+		7889719D20393C4C00A8E8DA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719C20393C4C00A8E8DA /* AssetsLibrary.framework */; };
+		7889719F20393C6A00A8E8DA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7889719E20393C6A00A8E8DA /* Accelerate.framework */; };
+		788971A120393C7800A8E8DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788971A020393C7800A8E8DA /* QuartzCore.framework */; };
+		788971A320393CDA00A8E8DA /* OpticaldoWork.mm in Sources */ = {isa = PBXBuildFile; fileRef = 788971A220393CDA00A8E8DA /* OpticaldoWork.mm */; };
+		788971A620393D5F00A8E8DA /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 788971A520393D5F00A8E8DA /* libc++.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +53,7 @@
 		788971532039398F00A8E8DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		788971542039398F00A8E8DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		788971562039398F00A8E8DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		788971572039398F00A8E8DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		788971572039398F00A8E8DA /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		7889715A2039398F00A8E8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7889715C2039398F00A8E8DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7889715F2039398F00A8E8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,23 @@
 		788971732039398F00A8E8DA /* Optical_flowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Optical_flowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		788971772039398F00A8E8DA /* Optical_flowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Optical_flowUITests.m; sourceTree = "<group>"; };
 		788971792039398F00A8E8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7889718620393A5600A8E8DA /* GTCaptureOutputUtils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GTCaptureOutputUtils.mm; sourceTree = "<group>"; };
+		7889718820393A7F00A8E8DA /* GTCaptureOutputUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTCaptureOutputUtils.h; sourceTree = "<group>"; };
+		7889718A20393AAC00A8E8DA /* GTPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTPreviewView.m; sourceTree = "<group>"; };
+		7889718C20393AC400A8E8DA /* GTPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTPreviewView.h; sourceTree = "<group>"; };
+		7889718E20393BDB00A8E8DA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7889719020393BE600A8E8DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7889719220393BF300A8E8DA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7889719420393BFC00A8E8DA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7889719620393C0A00A8E8DA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		7889719820393C2E00A8E8DA /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		7889719A20393C4200A8E8DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7889719C20393C4C00A8E8DA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		7889719E20393C6A00A8E8DA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		788971A020393C7800A8E8DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		788971A220393CDA00A8E8DA /* OpticaldoWork.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpticaldoWork.mm; sourceTree = "<group>"; };
+		788971A420393CF700A8E8DA /* OpticaldoWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpticaldoWork.h; sourceTree = "<group>"; };
+		788971A520393D5F00A8E8DA /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788971A620393D5F00A8E8DA /* libc++.1.dylib in Frameworks */,
+				788971A120393C7800A8E8DA /* QuartzCore.framework in Frameworks */,
+				7889719F20393C6A00A8E8DA /* Accelerate.framework in Frameworks */,
+				7889719D20393C4C00A8E8DA /* AssetsLibrary.framework in Frameworks */,
+				7889719B20393C4200A8E8DA /* UIKit.framework in Frameworks */,
+				7889719920393C2E00A8E8DA /* libjpeg.a in Frameworks */,
+				7889719720393C0A00A8E8DA /* CoreImage.framework in Frameworks */,
+				7889719520393BFC00A8E8DA /* CoreVideo.framework in Frameworks */,
+				7889719320393BF400A8E8DA /* CoreMedia.framework in Frameworks */,
+				7889719120393BE600A8E8DA /* CoreGraphics.framework in Frameworks */,
+				7889718F20393BDB00A8E8DA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +127,7 @@
 				7889716B2039398F00A8E8DA /* Optical_flowTests */,
 				788971762039398F00A8E8DA /* Optical_flowUITests */,
 				788971512039398F00A8E8DA /* Products */,
+				7889718D20393BDB00A8E8DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +144,19 @@
 		788971522039398F00A8E8DA /* Optical_flow */ = {
 			isa = PBXGroup;
 			children = (
+				7889718920393A9100A8E8DA /* View */,
+				7889718520393A1F00A8E8DA /* Utils */,
 				788971532039398F00A8E8DA /* AppDelegate.h */,
 				788971542039398F00A8E8DA /* AppDelegate.m */,
 				788971562039398F00A8E8DA /* ViewController.h */,
-				788971572039398F00A8E8DA /* ViewController.m */,
+				788971572039398F00A8E8DA /* ViewController.mm */,
 				788971592039398F00A8E8DA /* Main.storyboard */,
 				7889715C2039398F00A8E8DA /* Assets.xcassets */,
 				7889715E2039398F00A8E8DA /* LaunchScreen.storyboard */,
 				788971612039398F00A8E8DA /* Info.plist */,
 				788971622039398F00A8E8DA /* main.m */,
+				788971A220393CDA00A8E8DA /* OpticaldoWork.mm */,
+				788971A420393CF700A8E8DA /* OpticaldoWork.h */,
 			);
 			path = Optical_flow;
 			sourceTree = "<group>";
@@ -130,6 +177,42 @@
 				788971792039398F00A8E8DA /* Info.plist */,
 			);
 			path = Optical_flowUITests;
+			sourceTree = "<group>";
+		};
+		7889718520393A1F00A8E8DA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7889718620393A5600A8E8DA /* GTCaptureOutputUtils.mm */,
+				7889718820393A7F00A8E8DA /* GTCaptureOutputUtils.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7889718920393A9100A8E8DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7889718A20393AAC00A8E8DA /* GTPreviewView.m */,
+				7889718C20393AC400A8E8DA /* GTPreviewView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7889718D20393BDB00A8E8DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				788971A520393D5F00A8E8DA /* libc++.1.dylib */,
+				788971A020393C7800A8E8DA /* QuartzCore.framework */,
+				7889719E20393C6A00A8E8DA /* Accelerate.framework */,
+				7889719C20393C4C00A8E8DA /* AssetsLibrary.framework */,
+				7889719A20393C4200A8E8DA /* UIKit.framework */,
+				7889719820393C2E00A8E8DA /* libjpeg.a */,
+				7889719620393C0A00A8E8DA /* CoreImage.framework */,
+				7889719420393BFC00A8E8DA /* CoreVideo.framework */,
+				7889719220393BF300A8E8DA /* CoreMedia.framework */,
+				7889719020393BE600A8E8DA /* CoreGraphics.framework */,
+				7889718E20393BDB00A8E8DA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788971582039398F00A8E8DA /* ViewController.m in Sources */,
+				7889718B20393AAC00A8E8DA /* GTPreviewView.m in Sources */,
+				788971582039398F00A8E8DA /* ViewController.mm in Sources */,
+				788971A320393CDA00A8E8DA /* OpticaldoWork.mm in Sources */,
 				788971632039398F00A8E8DA /* main.m in Sources */,
+				7889718720393A5600A8E8DA /* GTCaptureOutputUtils.mm in Sources */,
 				788971552039398F00A8E8DA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +520,10 @@
 				DEVELOPMENT_TEAM = CAFDG7Q67V;
 				INFOPLIST_FILE = Optical_flow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +538,10 @@
 				DEVELOPMENT_TEAM = CAFDG7Q67V;
 				INFOPLIST_FILE = Optical_flow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "testfile.Optical-flow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
