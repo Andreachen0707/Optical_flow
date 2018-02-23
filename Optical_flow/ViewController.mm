@@ -5,7 +5,7 @@
 //  Created by Andrea Chen on 12/3/17.
 //  Copyright © 2017 Andrea Chen. All rights reserved.
 //
-#import <GoogleMobileVision/GoogleMobileVision.h>
+//#import <GoogleMobileVision/GoogleMobileVision.h>
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>

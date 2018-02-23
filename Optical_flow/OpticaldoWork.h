@@ -6,8 +6,8 @@
 //  Copyright © 2018 Andrea Chen. All rights reserved.
 //
 
-#ifndef OpticalDowork_h
-#define OpticalDowork_h
+#ifndef OpticaldoWork_h
+#define OpticaldoWork_h
 
 
 #endif /* OpticalDowork_h */
@@ -17,8 +17,9 @@
 #import <opencv2/objdetect/objdetect.hpp>
 #import <opencv2/imgproc/imgproc_c.h>
 
-@interface OpticalDowork : NSObject
-+(NSMutableArray*)OpticalFlowdowork:(NSArray<NSValue *>*)GMVinputPoints :(CGImageRef)CurrentFrame;
+@interface OpticaldoWork : NSObject
++(void)OFReceiveExactProcessorPoints: (NSArray<CGPoint>) points :(UIImage) currentFrame
++(NSMutableArray*)OFDoWorkAndProducePoints:(NSArray<NSValue *>*)GMVinputPoints :(CGImageRef)CurrentFrame;
 @end
 
 

@@ -6,20 +6,19 @@
 //  Copyright © 2018 Andrea Chen. All rights reserved.
 //
 #import "GTCaptureOutputUtils.h"
-#import "OpticalDowork.h"
+#import "OpticaldoWork.h"
 #import <AVFoundation/AVFoundation.h>
 
 using namespace cv;
-@implementation OpticalDowork
 
-
+@implementation OpticaldoWork
 cv::Size                    _winSize;
 cv::TermCriteria            _termcrit;
 
 
-Mat image;
-vector<uchar>               status;
-vector<float>               err;
+cv::Mat image;
+cv::vector<uchar>               status;
+cv::vector<float>               err;
 
 
 //These four component should be global
@@ -28,30 +27,42 @@ cv::vector<cv::Point2f> points[2];
 Mat gray;
 Mat gray_prev;
 
+
+//vector for all input GMV results
+cv::vector<Point2f> _GMVPointall;
+
 // Input: GMVinputPoints: correct detection results from GMV
 //        CurrentFrame: coordinate frame with the correct results
 //        Update: whether there is a new result come in
-+(NSArray*)OpticalFlowdowork:(NSArray<NSValue *>*)GMVinputPoints :(CGImageRef)CurrentFrame
++(void)OFReceiveExactProcessorPoints: (NSArray<CGPoint>) points :(UIImage) currentFrame
+{
+    
+    //For Adam:
+    //I don't thing we need to have 'currentFrame' for storing the correct points,
+    //instead, we can set a global flag to tell whether the optical flow need to check with correct result
+    
+    
+    //put GMV results into vector, for further compute
+    for(NSValue * value in points){
+        CGPoint point = [value CGPointValue];
+        _GMVPointall.push_back(cv::Point2f(point.x,point.y));
+    }
+    
+    //if we need to give the result to optical flow to check
+    _addRemovePt = true;
+    
+    
+}
++(NSArray*)OFDoWorkAndProducePoints :(UIImage)currentFrame
 {
     NSArray* newPoints;
     _winSize = cv::Size(15,15);
     _termcrit = cv::TermCriteria(cv::TermCriteria::EPS|cv::TermCriteria::COUNT,20,0.01);
     
-    //creat UIimage from input CGimage
-    UIImage *grayui = [UIImage imageWithCGImage:CurrentFrame];
     
     //convert UIimage to opencv gray mat
-    gray =* [GTCaptureOutputUtils cvMatFromImage:grayui gray:true];
-    
-    //vector for all input GMV results
-    vector<Point2f> _touchPointall;
-    
-    //put GMV results into vector, for further compute
-    for(NSValue * value in GMVinputPoints){
-        CGPoint point = [value CGPointValue];
-        _touchPointall.push_back(cv::Point2f(point.x,point.y));
-    }
-    
+    gray =* [GTCaptureOutputUtils cvMatFromImage:currentFrame gray:true];
+   
     //These mats should be global.
     //Mat gray;
     //Mat gray_prev;
@@ -72,27 +83,27 @@ Mat gray_prev;
         size_t i;
         //if new result comes in, then check with the tracking results, else just do tracking
         
-        for(i = 0; i<_touchPointall.size();i++)
+        for(i = 0; i<_GMVPointall.size();i++)
         {
             if(_addRemovePt)
             {
-                if( _touchPointall[i]==cv::Point2f(288,-80)){
+                if( _GMVPointall[i]==cv::Point2f(288,-80)){
                     continue;
                 }
-                if(norm(_touchPointall[i]-points[1][i])<=3)
+                if(norm(_GMVPointall[i]-points[1][i])<=3)
                 {
                     NSLog(@"accpeted");
                 }
                 
-                if(norm(_touchPointall[i] - points[1][i])>= 10 && norm(_touchPointall[i] - points[1][i])<=20)
+                if(norm(_GMVPointall[i] - points[1][i])>= 10 && norm(_GMVPointall[i] - points[1][i])<=20)
                 {
-                    points[1][i]=Point2f((points[1][i].x + _touchPointall[i].x)/2.0,(points[1][i].y+ _touchPointall[i].y)/2.0);
-                    points[1][i] = _touchPointall[i];
+                    points[1][i]=Point2f((points[1][i].x + _GMVPointall[i].x)/2.0,(points[1][i].y+ _GMVPointall[i].y)/2.0);
+                    points[1][i] = _GMVPointall[i];
                     NSLog(@"wrong points, adjusting");
                 }
-                if(norm(_touchPointall[i] - points[1][i])>20)
+                if(norm(_GMVPointall[i] - points[1][i])>20)
                 {
-                    points[1][i] = _touchPointall[i];
+                    points[1][i] = _GMVPointall[i];
                     NSLog(@"FATALE ERROR");
                 }
             }
@@ -103,11 +114,12 @@ Mat gray_prev;
         
     }
     
+    
     //for first init or give new results, put GMV results in points[1]
     if(_addRemovePt)
     {
         //test code -- upload points
-        for(size_t i=0;i < _touchPointall.size();i++){
+        for(size_t i=0;i < _GMVPointall.size();i++){
             cv::vector<cv::Point2f> temp;
             temp.push_back(_touchPointall[i]);
             cornerSubPix(gray,temp, _winSize,cv::Size(-1,-1),_termcrit);

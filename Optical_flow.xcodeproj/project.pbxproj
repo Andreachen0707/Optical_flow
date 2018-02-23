@@ -90,11 +90,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				788971A620393D5F00A8E8DA /* libc++.1.dylib in Frameworks */,
+				7889719920393C2E00A8E8DA /* libjpeg.a in Frameworks */,
 				788971A120393C7800A8E8DA /* QuartzCore.framework in Frameworks */,
 				7889719F20393C6A00A8E8DA /* Accelerate.framework in Frameworks */,
 				7889719D20393C4C00A8E8DA /* AssetsLibrary.framework in Frameworks */,
 				7889719B20393C4200A8E8DA /* UIKit.framework in Frameworks */,
-				7889719920393C2E00A8E8DA /* libjpeg.a in Frameworks */,
 				7889719720393C0A00A8E8DA /* CoreImage.framework in Frameworks */,
 				7889719520393BFC00A8E8DA /* CoreVideo.framework in Frameworks */,
 				7889719320393BF400A8E8DA /* CoreMedia.framework in Frameworks */,
@@ -201,11 +201,11 @@
 			isa = PBXGroup;
 			children = (
 				788971A520393D5F00A8E8DA /* libc++.1.dylib */,
+				7889719820393C2E00A8E8DA /* libjpeg.a */,
 				788971A020393C7800A8E8DA /* QuartzCore.framework */,
 				7889719E20393C6A00A8E8DA /* Accelerate.framework */,
 				7889719C20393C4C00A8E8DA /* AssetsLibrary.framework */,
 				7889719A20393C4200A8E8DA /* UIKit.framework */,
-				7889719820393C2E00A8E8DA /* libjpeg.a */,
 				7889719620393C0A00A8E8DA /* CoreImage.framework */,
 				7889719420393BFC00A8E8DA /* CoreVideo.framework */,
 				7889719220393BF300A8E8DA /* CoreMedia.framework */,
