@@ -40,12 +40,22 @@ cv::vector<Point2f> _GMVPointall;
     //For Adam:
     //I don't thing we need to have 'currentFrame' for storing the correct points,
     //instead, we can set a global flag to tell whether the optical flow need to check with correct result
-    
-    
+    cv::Point2f point_0,point_1,point_2,point_3;
     //put GMV results into vector, for further compute
     for(NSValue * value in points){
         CGPoint point = [value CGPointValue];
+        //give each point four partners
+        point_0 = cv::Point2f(point.x-10,point.y);
+        point_1 = cv::Point2f(point.x+10,point.y);
+        point_2 = cv::Point2f(point.x,point.y-10);
+        point_3 = cv::Point2f(point.x,point.y+10);
+        
         _GMVPointall.push_back(cv::Point2f(point.x,point.y));
+        _GMVPointall.push_back(cv::Point2f(point_0.x,point_0.y));
+        _GMVPointall.push_back(cv::Point2f(point_1.x,point_1.y));
+        _GMVPointall.push_back(cv::Point2f(point_2.x,point_2.y));
+        _GMVPointall.push_back(cv::Point2f(point_3.x,point_3.y));
+        
     }
     
     //if we need to give the result to optical flow to check
@@ -110,6 +120,14 @@ cv::vector<Point2f> _GMVPointall;
             if(!status[i])
                 continue;
             circle(image, points[1][i], 5, cv::Scalar(0,255,0), -1, 8);
+            
+            //give out the center average point
+            if(i%5==4){
+                cv::Point2f showpoint;
+                showpoint.x = (points[1][i].x+points[1][i-4].x+points[1][i-3].x+points[1][i-2].x+points[1][i-3].x)/5;
+                showpoint.y = (points[1][i].y+points[1][i-4].y+points[1][i-3].y+points[1][i-2].y+points[1][i-3].y)/5;
+                circle(image, showpoint, 5, cv::Scalar(0,0,255), -1, 8);
+            }
         }
         
     }
